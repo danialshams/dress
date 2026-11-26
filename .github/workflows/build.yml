@@ -14,5 +14,6 @@ jobs:
         with:
           node-version: 22
       - run: npm install --no-audit --no-fund
+      - run: node scripts/check-hero.mjs
       - run: npm run build
       - run: test -f out/index.html
